@@ -7,3 +7,8 @@ export const Triangulo = styled.div`
   border-style: solid;
   border-color: transparent transparent transparent green;
 `;
+export const ContainerCount = styled.section`
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+`;

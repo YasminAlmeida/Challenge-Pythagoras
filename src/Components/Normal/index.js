@@ -35,65 +35,75 @@ export default function Normal() {
     setOperator();
     SetNumber(0);
   };
-
+  const resetAll = () => {
+    SetNumber(0);
+    setResult(0);
+  };
   return (
-    <section>
-      <p>
-        {OldNumber}
-        {Operator}
-        {Number}
-      </p>
-      <p>Resultado: {Result}</p>
-      <h2>teste</h2>
+    <S.SectionCalculator>
+      <S.Display>
+        <S.Historic>
+          {OldNumber}
+          {Operator}
+          {Number}
+        </S.Historic>
+        <S.Result>{Result}</S.Result>
+      </S.Display>
+
       <S.Container>
-        <button onClick={reset}>AC</button>
-        {/* <button>+/-</button> */}
-        <button onClick={Porcentage} value={'%'}>
+        <S.BtnOperator onClick={resetAll}>AC</S.BtnOperator>
+        <S.BtnOperator onClick={Porcentage} value={'%'}>
           %
-        </button>
-        <button onClick={ChangeOperator} value={'/'}>
+        </S.BtnOperator>
+        <S.BtnOperator onClick={Porcentage} value={'+/-'}>
+          +/-
+        </S.BtnOperator>
+        <S.BtnOperatorRigth onClick={ChangeOperator} value={'/'}>
           /
-        </button>
-        <button onClick={ValueClick} value={8}>
+        </S.BtnOperatorRigth>
+        <S.BtnNumber onClick={ValueClick} value={7}>
+          7
+        </S.BtnNumber>
+        <S.BtnNumber onClick={ValueClick} value={8}>
           8
-        </button>
-        <button onClick={ValueClick} value={9}>
+        </S.BtnNumber>
+        <S.BtnNumber onClick={ValueClick} value={9}>
           9
-        </button>
-        <button onClick={ChangeOperator} value={'*'}>
+        </S.BtnNumber>
+        <S.BtnOperatorRigth onClick={ChangeOperator} value={'*'}>
           X
-        </button>
-        <button onClick={ValueClick} value={4}>
+        </S.BtnOperatorRigth>
+        <S.BtnNumber onClick={ValueClick} value={4}>
           4
-        </button>
-        <button onClick={ValueClick} value={5}>
+        </S.BtnNumber>
+        <S.BtnNumber onClick={ValueClick} value={5}>
           5
-        </button>
-        <button onClick={ValueClick} value={6}>
+        </S.BtnNumber>
+        <S.BtnNumber onClick={ValueClick} value={6}>
           6
-        </button>
-        <button onClick={ChangeOperator} value={'-'}>
+        </S.BtnNumber>
+        <S.BtnOperatorRigth onClick={ChangeOperator} value={'-'}>
           -
-        </button>
-        <button onClick={ValueClick} value={1}>
+        </S.BtnOperatorRigth>
+        <S.BtnNumber onClick={ValueClick} value={1}>
           1
-        </button>
-        <button onClick={ValueClick} value={2}>
+        </S.BtnNumber>
+        <S.BtnNumber onClick={ValueClick} value={2}>
           2
-        </button>
-        <button onClick={ValueClick} value={3}>
+        </S.BtnNumber>
+        <S.BtnNumber onClick={ValueClick} value={3}>
           3
-        </button>
-        <button onClick={ChangeOperator} value={'+'}>
+        </S.BtnNumber>
+        <S.BtnOperatorRigth onClick={ChangeOperator} value={'+'}>
           +
-        </button>
-        <button onClick={ValueClick} value={0}>
+        </S.BtnOperatorRigth>
+        <S.BtnNumber onClick={ValueClick} value={0}>
           0
-        </button>
-        <button onClick={Operations} value={'='}>
+        </S.BtnNumber>
+        <S.BtnOperator onClick={Operations} value={'='}>
           =
-        </button>
+        </S.BtnOperator>
       </S.Container>
-    </section>
+    </S.SectionCalculator>
   );
 }
