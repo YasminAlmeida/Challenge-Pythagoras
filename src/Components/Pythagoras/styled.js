@@ -170,6 +170,7 @@ export const Select = styled.select`
   height: 25px;
   border-radius: 4px;
   text-align: center;
+  cursor: pointer;
   @media (max-width: 400px) {
     width: 110px;
   }

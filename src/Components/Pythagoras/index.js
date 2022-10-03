@@ -167,7 +167,7 @@ export default function Area({ setCalculator }) {
                     }}
                   >
                     <option value="opposite">Cateto Oposto</option>
-                    <option value="adjacent">Cateto Adjacente</option>
+                    <option value="adjacent">Cateto Adjacente</option>{' '}
                   </S.Select>
                 </div>
               )}
