@@ -34,6 +34,7 @@ export const ContainerType = styled.div`
   display: grid;
   justify-items: start;
   margin-left: 20px;
+  justify-items: center;
 `;
 export const ContainerCount = styled.section`
   display: grid;
