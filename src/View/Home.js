@@ -3,14 +3,11 @@ import Pythagoras from '../Components/Pythagoras/index.js';
 import Normal from '../Components/Normal/index.js';
 
 export default function Home() {
-  const [Calculator, setCalculator] = useState('N');
+  const [Calculator, setCalculator] = useState('A');
   return (
     <>
-      <button onClick={() => setCalculator('N')}>N</button>
-
-      <button onClick={() => setCalculator('A')}>A</button>
-      {Calculator === 'N' && <Normal />}
-      {Calculator === 'A' && <Pythagoras />}
+      {Calculator === 'N' && <Normal setCalculator={setCalculator} />}
+      {Calculator === 'A' && <Pythagoras setCalculator={setCalculator} />}
     </>
   );
 }

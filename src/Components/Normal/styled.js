@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+export const SectionNormal = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+`;
 export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -48,6 +54,9 @@ export const BtnOperator = styled.button`
   border-radius: 50%;
   margin: 0.3rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 export const BtnOperatorRigth = styled.button`
   width: 3rem;
@@ -72,4 +81,8 @@ export const BtnNumber = styled.button`
   color: #2e2e2e;
   background-color: #ededed;
   cursor: pointer;
+`;
+export const Img = styled.img`
+  width: 35px;
+  height: 35px;
 `;
