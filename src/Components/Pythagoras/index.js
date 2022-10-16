@@ -148,7 +148,7 @@ export default function Area({ setCalculator }) {
           <S.ContainerChoise>
             <S.ContainerType>
               <div>
-                <h4>Calcular o catheter ou a hipotenusa?</h4>
+                <h4>Calcular o cateto ou a hipotenusa?</h4>
                 <S.Select
                   onChange={(e) => {
                     setType(e.target.value);
